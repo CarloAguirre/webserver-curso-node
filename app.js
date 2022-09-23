@@ -22,21 +22,21 @@ hbs.registerPartials(__dirname + '/views/partials', function (err) {});
 app.use(express.static('public')) // <--- Señalamos la carpeta 'public' y su contenido
 
 app.get('/', (req, res)=> {
-  res.render('home', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
+  res.render('index', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
     nombre: 'Carlo Aguirre',
     titulo: 'Curso de Node'
   });
 })
 
-app.get('/generic', (req, res)=> {
-    res.render('generic', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
+app.get('/producto', (req, res)=> {
+    res.render('producto', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
       nombre: 'Carlo Aguirre',
       titulo: 'Curso de Node'
     });
   })
 
-app.get('/elements', (req, res)=> {
-  res.render('elements', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
+app.get('/nosotros', (req, res)=> {
+  res.render('nosotros', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
     nombre: 'Carlo Aguirre',
     titulo: 'Curso de Node'
   });
