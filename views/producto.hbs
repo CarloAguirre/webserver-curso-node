@@ -17,18 +17,11 @@
     <title>BuenaAventura Store</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img class="header__logo" src="assets/img/logo_1.png" alt="Logotipo">
-        </a>
-            <h1 class="titulo">Buena Aventura</h1>
-            <p class="titulo__subtitulo">STORE</p>
-            <img class="titulo__downline" src="assets/img/down_line.png" alt="down_line">
-    </header>
-    <nav class="navegacion">
-        <a class="navegacion__enlace" href="/"> Tienda</a>
-        <a class="navegacion__enlace navegacion__enlace--activo" href="/nosotros"> Nosotros</a>
-    </nav>
+    <!-- header -->
+    {{> header }}
+    <!-- navbar -->
+    {{> navbar }}  
+
     <main class="contenedor">
         <h1 class="encabezado">Telar</h1>
         <div class="telar producto contenedor">
@@ -48,8 +41,7 @@
             </div>
         </div>    
     </main>
-    <footer class="footer">
-        <p class="footer__texto">BuenaAventura Store - Todos los derechos Reservados 2022.</p>
-    </footer>
+    <!-- footer -->
+    {{> footer }}
 </body>
 </html>

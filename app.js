@@ -22,24 +22,15 @@ hbs.registerPartials(__dirname + '/views/partials', function (err) {});
 app.use(express.static('public')) // <--- Señalamos la carpeta 'public' y su contenido
 
 app.get('/', (req, res)=> {
-  res.render('index', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
-    nombre: 'Carlo Aguirre',
-    titulo: 'Curso de Node'
-  });
+  res.render('index');
 })
 
 app.get('/producto', (req, res)=> {
-    res.render('producto', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
-      nombre: 'Carlo Aguirre',
-      titulo: 'Curso de Node'
-    });
+    res.render('producto');
   })
 
 app.get('/nosotros', (req, res)=> {
-  res.render('nosotros', {            //--> Podemos enviar como segundo argumento (controlador) un objeto y utilizarlo en el hbs/html
-    nombre: 'Carlo Aguirre',
-    titulo: 'Curso de Node'
-  });
+  res.render('nosotros');
 })
 
 // en cualquier otro caso (ruta) enviara 'Error 404'
