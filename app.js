@@ -12,7 +12,6 @@ const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const port = process.env.PORT
 
 // HANDLEBARS; renderizar contenido
-
 app.set('view engine', 'hbs');    // <--- Esta linea nos permitira renderizar utilizando handlebars(hbs)
 
 // Parciales de hbs
